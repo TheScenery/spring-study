@@ -1,11 +1,16 @@
 package com.thescenery.service;
 
-import com.thescenery.dao.UserDaoImpl;
+import com.thescenery.dao.UserDao;
 
 public class UserServiceImpl implements UserService{
+    private UserDao userDao;
+
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
     @Override
     public void readUser() {
-        UserDaoImpl userDao = new UserDaoImpl();
         userDao.readUser();
     }
 }
