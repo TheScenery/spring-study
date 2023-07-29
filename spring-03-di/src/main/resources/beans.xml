@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="io.thescenery.pojo.Address">
+        <property name="addr" value="This is a address"/>
+    </bean>
+
+    <bean id="student" class="io.thescenery.pojo.Student">
+        <property name="name" value="Student Name"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>Book1</value>
+                <value>Book2</value>
+            </array>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>hobby1</value>
+                <value>hobby2</value>
+            </list>
+        </property>
+        <property name="cards">
+            <map>
+                <entry key="c1" value="card1"/>
+                <entry key="c2" value="card2"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>game1</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null/>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="config1">Config1</prop>
+                <prop key="config2">Config1</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

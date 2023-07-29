@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-02-hello-spring</module>
+        <module>spring-03-di</module>
     </modules>
 
     <properties>
