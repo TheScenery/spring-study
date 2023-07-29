@@ -8,4 +8,8 @@
         <property name="str" value="Spring"/>
     </bean>
 
+    <bean id="hello2" class="io.thescenery.pojo.Hello">
+        <property name="str" value="Spring2"/>
+    </bean>
+
 </beans>
